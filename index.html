@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>To My Bestfriend 💖</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&display=swap');
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(120deg, #ffafbd 0%, #ffc3a0 100%);
+        min-height: 100vh;
+        overflow-x: hidden;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        user-select: none;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+        color: #fff;
+        padding: 0 10px;
+    }
+    /* Typewriter text */
+    .typewriter {
+        font-family: 'Pacifico', cursive;
+        color: #fff6f6;
+        font-size: 2.3rem;
+        margin-top: 40px;
+        min-height: 90px;
+        letter-spacing: 2.5px;
+        opacity: 1;
+    }
+    /* Main message */
+    .message {
+        font-size: 1.3rem;
+        margin: 10px 0 25px;
+        opacity: 0;
+        animation: fadeInUp 2s ease forwards;
+        animation-delay: 6s;
+        white-space: pre-line;
+        max-width: 390px;
+    }
+    /* Slideshow container */
+    .slideshow {
+        background: rgba(255, 255, 255, 0.13);
+        border-radius: 24px;
+        box-shadow: 0 4px 40px 0 rgba(0,0,0,0.2);
+        padding: 10px;
+        width: 340px;
+        height: 220px;
+        margin: 20px auto 10px;
+        overflow: hidden;
+        position: relative;
+        opacity: 0;
+        animation: fadeInUp 2s ease forwards;
+        animation-delay: 7s;
+    }
+    .slideshow img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+    }
+    /* Heart icon */
+    .heart {
+        font-size: 45px;
+        animation: heartbeat 1.8s infinite;
+        margin-top: 18px;
+        opacity: 0;
+        animation: fadeInUp 2s ease forwards;
+        animation-delay: 8.2s;
+    }
+    /* Button */
+    .button {
+        background: #fff;
+        color: #fa709a;
+        border: none;
+        border-radius: 20px;
+        padding: 13px 32px;
+        font-size: 1.15rem;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 18px;
+        transition: 0.3s;
+        opacity: 0;
+        animation: fadeInUp 2s ease forwards;
+        animation-delay: 9s;
+        user-select: none;
+    }
+    .button:hover {
+        background: #fa709a;
+        color: #fff;
+    }
+    /* Animations */
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(35px);}
+        to { opacity: 1; transform: translateY(0);}
+    }
+    @keyframes heartbeat {
+        0%, 100% { transform: scale(1);}
+        50% { transform: scale(1.22);}
+    }
+    /* Confetti styles */
+    #confetti-canvas {
+        position: fixed;
+        pointer-events: none;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    /* Firework canvas */
+    #firework-canvas {
+        position: fixed;
+        pointer-events: none;
+        z-index: 200;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: none;
+    }
+    /* Music icon */
+    .music-control {
+        position: fixed;
+        top: 30px;
+        right: 40px;
+        background: rgba(255,255,255,0.3);
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 2px 13px rgba(0,0,0,0.1);
+        z-index: 20;
+        user-select: none;
+    }
+    .music-control svg {
+        width: 25px;
+        height: 25px;
+        fill: #fa709a;
+    }
+</style>
+</head>
+<body>
+
+<audio id="bgmusic" src="bgm.mp3" loop></audio>
+<div class="music-control" onclick="toggleMusic()" title="Play/Pause Music">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z"/>
+    </svg>
+</div>
+
+<canvas id="confetti-canvas"></canvas>
+<canvas id="firework-canvas"></canvas>
+
+<div class="container">
+    <div class="typewriter" id="typewriter"></div>
+    <div class="message" id="message">
+       Mhuje samjh nahii aa raha tha kiya likhu😳,
+       Toh yeh likh diya ,
+       Aur hnn.....Ganna on krne mat bhulna...,
+       Thoda ganda  ganna hai but samjh nahii ayaa toh .. , 
+       Pehla toh maafi se start krte hain 🥹,
+       Sorry,
+       Mhuje maaf kr dena jitna bhi galti ki h maine ...,
+       Pehle mai jhut bola hounga but ap sachi mein,
+        Bahut pyari lgte hain aur khubsurat bhi ...,
+       Apko kisi din bharosa hoga, 
+       Mhuje toh humesha afsos hi hote rehta hai 🥹,
+        You fill my world with love, joy, and laughter.
+        Even you've changed my behaviour & Personality;
+        Every moment with you is a blessing.(Jitna bhi waqt gujara hai apke saath sb bahut khass te),
+        I cherish you more each day!
+        Aur ek saal badhi ho gyi, but still my favorite person jisko mai pareshan krta hun. Happy Birthday, my love! 😘
+    </div>
+    <div class="slideshow">
+        <img id="slide-image" src="1.jpg" alt="Photo slideshow" />
+    </div>
+    <div class="heart">💖</div>
+    <button class="button" id="surpriseBtn">Click for a Surprise!</button>
+</div>
+
+<script>
+// --- Typewriter Effect ---
+const typeMessage = " Happy Birthday Rashmita🌹\nJanamdin Mubarak ho💖\n(Pehle baar hai judge mat kijiyega)";
+let i = 0;
+function typeWriter() {
+    if (i < typeMessage.length) {
+        document.getElementById("typewriter").innerHTML += typeMessage.charAt(i) === "\n" ? "<br>" : typeMessage.charAt(i);
+        i++;
+        setTimeout(typeWriter, 40);
+    }
+}
+window.onload = () => {
+    typeWriter();
+    fadeInMessage();
+};
+function fadeInMessage() {
+    const msg = document.getElementById('message');
+    setTimeout(() => {
+        msg.style.opacity = 1;
+    }, 6000);
+}
+
+// --- Music control ---
+const audio = document.getElementById('bgmusic');
+let musicPlaying = false;
+function toggleMusic() {
+    if (!musicPlaying) {
+        audio.play();
+        musicPlaying = true;
+    } else {
+        audio.pause();
+        musicPlaying = false;
+    }
+}
+
+// --- Slideshow Images ---
+// Update filenames with your own images
+const images = ['1.jpg', '2.jpg', '3.jpg','4.jpg','5.jpg','6.jpg'];
+let currentImg = 0;
+const imgElem = document.getElementById('slide-image');
+setInterval(() => {
+    currentImg = (currentImg + 1) % images.length;
+    imgElem.src = images[currentImg];
+}, 3000);
+
+// --- Confetti Animation ---
+const confettiCanvas = document.getElementById('confetti-canvas');
+const confettiCtx = confettiCanvas.getContext('2d');
+confettiCanvas.width = window.innerWidth;
+confettiCanvas.height = window.innerHeight;
+
+let confetti = [];
+for (let i = 0; i < 60; i++) {
+    confetti.push({
+        x: Math.random()*confettiCanvas.width,
+        y: Math.random()*confettiCanvas.height,
+        r: Math.random()*7 + 3,
+        d: Math.random()*100,
+        color: "hsl("+(Math.random()*360)+",95%,65%)",
+        tilt: Math.random()*10,
+        tiltAngle: Math.random()*3
+    });
+}
+function drawConfetti() {
+    confettiCtx.clearRect(0,0,confettiCanvas.width,confettiCanvas.height);
+    for(let i = 0; i < confetti.length; i++) {
+        let c = confetti[i];
+        confettiCtx.beginPath();
+        confettiCtx.lineWidth = c.r;
+        confettiCtx.strokeStyle = c.color;
+        confettiCtx.moveTo(c.x + c.tilt + c.r/2, c.y);
+        confettiCtx.lineTo(c.x + c.tilt, c.y + c.tilt + c.r/2);
+        confettiCtx.stroke();
+    }
+    updateConfetti();
+}
+function updateConfetti() {
+    for(let i = 0; i < confetti.length; i++) {
+        let c = confetti[i];
+        c.y += Math.cos(c.d) + 2 + c.r/2;
+        c.x += Math.sin(c.d);
+        c.tiltAngle += 0.09;
+        c.tilt = Math.sin(c.tiltAngle - (i%3)) * 15;
+        if(c.y > confettiCanvas.height) {
+            c.x = Math.random()*confettiCanvas.width;
+            c.y = -10;
+        }
+    }
+}
+setInterval(drawConfetti, 30);
+
+// --- Firework on Surprise ---
+const fireworkCanvas = document.getElementById('firework-canvas');
+const fireworkCtx = fireworkCanvas.getContext('2d');
+fireworkCanvas.width = window.innerWidth;
+fireworkCanvas.height = window.innerHeight;
+function showFireworks() {
+    fireworkCanvas.style.display = 'block';
+    let particles = [];
+    for(let i=0;i<88;i++){
+        let angle=2*Math.PI*i/88;
+        let speed=Math.random()*4+3;
+        particles.push({
+            x:fireworkCanvas.width/2,
+            y:fireworkCanvas.height/2,
+            vx:Math.cos(angle)*speed,
+            vy:Math.sin(angle)*speed,
+            color: "hsl("+(angle*57)+",90%,65%)",
+            life:Math.random()*32+32
+        });
+    }
+    function animate(){
+        fireworkCtx.clearRect(0,0,fireworkCanvas.width,fireworkCanvas.height);
+        particles.forEach(p=>{
+            fireworkCtx.beginPath();
+            fireworkCtx.arc(p.x,p.y,5,0,2*Math.PI);
+            fireworkCtx.fillStyle=p.color;
+            fireworkCtx.fill();
+            p.x+=p.vx;
+            p.y+=p.vy;
+            p.vy+=0.08;
+            p.life--;
+        });
+        particles=particles.filter(p=>p.life>0);
+        if(particles.length){requestAnimationFrame(animate);}
+        else{fireworkCanvas.style.display='none';}
+    }
+    animate();
+}
+
+// --- Surprise Button ---
+document.getElementById('surpriseBtn').onclick = function() {
+    alert("Ap toh mere sapne ki tarah reh gye;\nJo kabhi pura nahii hoga ,💘\nAur hn syd mai pyr toh krta hi rahunga kyuki\n bahut yaad aati\nCringe lagega syd \nあなたをとても愛しています");
+    showFireworks();
+};
+
+// --- Animated Emoji Trail for Mouse ---
+document.body.addEventListener('mousemove', function(e){
+    let span = document.createElement('span');
+    span.innerHTML = '💖';
+    span.style.position = 'fixed';
+    span.style.left = (e.clientX+3)+'px';
+    span.style.top = (e.clientY-5)+'px';
+    span.style.fontSize = '20px';
+    span.style.opacity = '0.7';
+    span.style.pointerEvents = 'none';
+    span.style.zIndex = '9999';
+    span.style.userSelect = 'none';
+    document.body.appendChild(span);
+    setTimeout(()=>span.remove(),800);
+});
+
+// --- Resize Canvas on Window Resize ---
+window.addEventListener('resize', () => {
+    confettiCanvas.width = window.innerWidth;
+    confettiCanvas.height = window.innerHeight;
+
+    fireworkCanvas.width = window.innerWidth;
+    fireworkCanvas.height = window.innerHeight;
+});
+</script>
+
+</body>
+</html>
+
